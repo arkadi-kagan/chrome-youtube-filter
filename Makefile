@@ -8,3 +8,6 @@ clean:
 
 check:
 	stat chrome-filter.crx
+
+distcheck: check
+

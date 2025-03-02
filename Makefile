@@ -5,3 +5,6 @@ chrome-filter.crx:
 
 clean:
 	rm chrome-filter.crx chrome-filter.pem
+
+check:
+	stat chrome-filter.crx

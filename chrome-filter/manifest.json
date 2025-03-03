@@ -13,11 +13,21 @@
   "content_scripts": [
     {
       "js": [
-      	"scripts/content.js"
+        "scripts/base.js",
+      	"scripts/youtube.js"
       ],
       "matches": [
         "https://www.youtube.com/*",
         "https://m.youtube.com/*"
+      ]
+    },
+    {
+      "js": [
+        "scripts/base.js",
+      	"scripts/google.js"
+      ],
+      "matches": [
+        "https://www.google.com/*"
       ]
     }
   ]

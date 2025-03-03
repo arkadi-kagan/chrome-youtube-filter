@@ -5,6 +5,15 @@ function filter_by_class_and_id_multiple_only(class_name, id) {
 	}
 }
 
+function filter_last_resort() {
+	let bodies = document.getElementsByTagName("body");
+	for (let i = 0; i < bodies.length; i++) {
+		if (bodies[i].textContent.search(my_regex) != -1) {
+			bodies[i].setHTMLUnsafe("<body><H1>תוכן אסור בעמוד, לא נמצא מקום ספציפי</H1><BR/><p>נסה יוטיו: <a href=\"https://www.youtube.com\">Youtube</a></p></body>")
+		}
+	}
+}
+
 function cleanup_by_filter() {
 	filter_by_class_and_id("TzHB6b j8lBAb p7kDMc cLjAic", "");
 	filter_by_class_and_id("g PmEWq", "");
@@ -15,6 +24,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("Ww4FFb vt6azd", "");
 	filter_by_class_and_id("I8iMf", "");
 	filter_by_class_and_id("eA0Zlc WghbWd FnEtTd mkpRId ivg-i", "");
+	filter_last_resort();
 }
 
 setInterval(function(){

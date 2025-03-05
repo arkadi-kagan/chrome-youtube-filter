@@ -5,7 +5,7 @@ const regex_array = [
 	"Pega_x", "jonathan barak",
 	"Никита Удановский",
 	"луномосик", "Lunomosik",
-	"моргенштерн", "MORGENSHTERN",
+	"моргенштерн", "MORGENSHTERN", "Real Pepper", "Real_Pepper",
 	"Челлендж", "Challenge", "אתגר", "קומדי בר",
 	"Морковь PRO",
 	"KiKiDo",
@@ -19,7 +19,8 @@ const regex_array = [
 	"туалет", "трэш", "лайфхак", "Полный треш", "угар",
 	"ЛЮБОПЫТНЫЙ ПОЗНАВАТЕЛЬ", "LPOZNAVATEL", "сантехник",
 	"фиксики.*чинилы", "чинилы.*фиксики",
-    "секс", "סקס", "ציצי", "сиськи", "груди", "\\bsex\\b", "\\bsexy\\b"
+    "секс", "סקס", "ציצי", "сиськи", "груди", "\\bsex\\b", "\\bsexy\\b",
+    "девушка", "девушки"
 ];
 
 const my_regex = new RegExp(regex_array.join("|"), "i");

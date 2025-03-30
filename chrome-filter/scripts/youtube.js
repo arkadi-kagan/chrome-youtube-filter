@@ -12,6 +12,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("ytd-secondary-search-container-renderer", "");
 	filter_by_class_and_id("page-header-view-model-wiz__page-header-headline", "");
 	filter_by_class_and_id("page-header-view-model-wiz__page-header-headline-info", "");
+	filter_by_class_and_id("ytSuggestionComponentSuggestion", "");
 	filter_by_class_and_id("horizontal-card-list-card", "");
 	filter_by_class_and_id("rich-item-single-column", "");
 	filter_by_class_and_id("item", "");

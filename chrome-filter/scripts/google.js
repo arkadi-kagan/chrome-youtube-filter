@@ -24,6 +24,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("Ww4FFb vt6azd", "");
 	filter_by_class_and_id("I8iMf", "");
 	filter_by_class_and_id("eA0Zlc WghbWd FnEtTd mkpRId ivg-i", "");
+	filter_by_class_and_id("sbct", "");
 	filter_last_resort();
 }
 

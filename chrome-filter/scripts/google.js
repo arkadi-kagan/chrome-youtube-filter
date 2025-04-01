@@ -24,7 +24,9 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("Ww4FFb vt6azd", "");
 	filter_by_class_and_id("I8iMf", "");
 	filter_by_class_and_id("eA0Zlc WghbWd FnEtTd mkpRId ivg-i", "");
+	filter_by_class_and_id("xfX4Ac JI5uCe qB9BY yWNJXb", "");
 	filter_by_class_and_id("sbct", "");
+	filter_by_class_and_id("CYJS5e W0urI ZHugbd UivI7b", "");
 	filter_last_resort();
 }
 

@@ -1,5 +1,6 @@
 const regex_array = [
-	"Бумажкин", "Глент", "Кобяков", "Влад", "А4", "а четыре", "Kobyakov", "a4 youtube", "youtube a4", "YouTube[^A-Za-z]+A4", "vlad a4", "BEST OF A4",
+	"Бумажкин", "Глент", "Кобяков", "Влад", "А4", "а четыре", "Kobyakov", "a4 youtube",
+	"youtube a4", "YouTube[^A-Za-z]+A4", "vlad a4", "BEST OF A4", "клоун кола",
 	"BenKeysar", "בן קיסר", "Ben Keysar",
 	"SOIKAC", "Pe1m3sHeK", "БЕРТ",
 	"Уральские Пельмени", "Пельмени Family", "КВН", "уральскиепельмени", "Comedy Club",

@@ -14,14 +14,26 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
+    - name: Build for David
+      run: ./configure David && make
 
-    - name: Install dependencies
-      run: make
+    - name: Rename for David
+      run: cp chrome-filter.crx David-chrome-filter.crx
 
-    - name: Archive production artifacts
+    - name: Build for Yuval
+      run: ./configure Yuval && make
+
+    - name: Rename for Yuval
+      run: cp chrome-filter.crx Yuval-chrome-filter.crx
+
+    - name: Archive artifacts for David
       uses: actions/upload-artifact@v4
       with:
-        name: chrome-filter.crx
-        path: ./chrome-filter.crx
+        name: David-chrome-filter.crx
+        path: ./David-chrome-filter.crx
+
+    - name: Archive artifacts for Yuval
+      uses: actions/upload-artifact@v4
+      with:
+        name: Yuval-chrome-filter.crx
+        path: ./Yuval-chrome-filter.crx

@@ -1,3 +1,9 @@
 #!/usr/bin/bash
 
+FILTER_NAME=$1
+if [[ "${FILTER_NAME}" == "" ]]; then
+    FILTER_NAME=David
+fi
+cp -f ./chrome-filter/scripts/${FILTER_NAME}.js ./chrome-filter/scripts/words.js
+
 chromium --version

@@ -8,6 +8,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("ytd-section-list-renderer", "");
 	filter_by_class_and_id("ytd-rich-grid-renderer", "");
 	filter_by_class_and_id("ytd-item-section-renderer", "");
+	filter_by_class_and_id("ytd-shorts", "shorts-container");
 	filter_by_class_and_id("ytd-playlist-panel-renderer", "playlist-items");
 	filter_by_class_and_id("ytd-secondary-search-container-renderer", "");
 	filter_by_class_and_id("page-header-view-model-wiz__page-header-headline", "");

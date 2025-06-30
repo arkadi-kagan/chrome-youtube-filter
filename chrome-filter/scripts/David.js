@@ -3,7 +3,7 @@ const regex_array = [
 	"youtube a4", "YouTube[^A-Za-z]+A4", "vlad a4", "BEST OF A4", "клоун кола",
 	"BenKeysar", "בן קיסר", "Ben Keysar",
 	"SOIKAC", "Pe1m3sHeK", "БЕРТ",
-	"Уральские Пельмени", "Пельмени Family", "КВН", "уральскиепельмени", "Comedy Club",
+	"Уральские Пельмени", "Пельмени Family", "КВН", "уральскиепельмени", "Comedy Club", "Уральских Пельмен",
 	"Юмор", "Потеха", "дурной", "глупый", "ржаки",
 	"Pega_x", "jonathan barak",
 	"Никита Удановский",

@@ -31,6 +31,28 @@
       "matches": [
         "https://www.google.com/*"
       ]
+    },
+    {
+      "js": [
+        "scripts/not_allowed.js"
+      ],
+      "matches": [
+        "https://www.vk.com/*",
+        "https://m.vk.com/*",
+        "https://vk.com/*",
+        "https://www.ok.ru/*",
+        "https://m.ok.ru/*",
+        "https://ok.ru/*",
+        "https://www.pornhub.com/*",
+        "https://m.pornhub.com/*",
+        "https://pornhub.com/*",
+        "https://www.xvideos.com/*",
+        "https://m.xvideos.com/*",
+        "https://xvideos.com/*",
+        "https://www.xnxx.com/*",
+        "https://m.xnxx.com/*",
+        "https://xnxx.com/*"
+      ]
     }
   ]
 }

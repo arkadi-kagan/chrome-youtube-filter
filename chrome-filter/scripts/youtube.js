@@ -1,5 +1,8 @@
 
 function cleanup_by_filter() {
+	filter_class_id_and_other_class_id("ytd-watch-metadata", "top-row", "ytd-watch-flexy", "full-bleed-container");
+	filter_class_id_and_inner_calls_tag("ytd-watch-flexy", "primary-inner", "watch-active-metadata ytd-watch-flexy", "ytd-watch-metadata");
+	filter_class_and_other_class_id("watch-content full-bleed-wn-thumbs", "player-container sticky-player", "player-container-id");
 	filter_by_class_and_id("ytd-channel-renderer", "content-section");
 	filter_by_class_and_id("ytd-vertical-list-renderer", "");
 	filter_by_class_and_id("ytd-video-renderer", "dismissible");
@@ -9,7 +12,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("ytd-watch-next-secondary-results-renderer", "");
 	filter_by_class_and_id("ytd-section-list-renderer", "");
 	filter_by_class_and_id("ytd-rich-grid-renderer", "");
-	filter_by_class_and_id("ytd-item-section-renderer", "");
+	filter_by_class_and_id("ytd-item-section-renderer", "contents");
 	filter_by_class_and_id("ytd-shorts", "shorts-container");
 	filter_by_class_and_id("ytd-playlist-panel-renderer", "playlist-items");
 	filter_by_class_and_id("ytd-secondary-search-container-renderer", "");
@@ -20,8 +23,6 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("rich-item-single-column", "");
 	filter_by_class_and_id("item", "");
 	filter_by_class_and_id("ShortsLockupViewModelHost", "");
-	filter_class_id_and_inner_calls_tag("ytd-watch-flexy", "primary-inner", "watch-active-metadata ytd-watch-flexy", "ytd-watch-metadata");
-	filter_class_and_other_class_id("watch-content full-bleed-wn-thumbs", "player-container sticky-player", "player-container-id");
 	filter_by_class_and_id("watch-content full-bleed-wn-thumbs", "");
 	filter_by_class_and_id("carousel-item", "");
 	filter_by_class_and_id("feed-item", "");

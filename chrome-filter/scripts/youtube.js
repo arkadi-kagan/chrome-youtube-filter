@@ -5,6 +5,8 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("ytd-video-renderer", "dismissible");
 	filter_by_class_and_id("ytd-rich-grid-media", "dismissible");
 	filter_by_class_and_id("ytd-compact-video-renderer", "dismissible");
+	filter_by_class_and_id("ytd-watch-flexy", "primary");
+	filter_by_class_and_id("ytd-watch-next-secondary-results-renderer", "");
 	filter_by_class_and_id("ytd-section-list-renderer", "");
 	filter_by_class_and_id("ytd-rich-grid-renderer", "");
 	filter_by_class_and_id("ytd-item-section-renderer", "");

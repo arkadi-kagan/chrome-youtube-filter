@@ -9,7 +9,7 @@ function filter_last_resort() {
 	let bodies = document.getElementsByTagName("body");
 	for (let i = 0; i < bodies.length; i++) {
 		if (bodies[i].textContent.search(my_regex) != -1) {
-			bodies[i].setHTMLUnsafe("<body><H1>תוכן אסור בעמוד, לא נמצא מקום ספציפי</H1><BR/><p>נסה יוטיו: <a href=\"https://www.youtube.com\">Youtube</a></p></body>")
+			bodies[i].outerHTML = "<body><H1>תוכן אסור בעמוד, לא נמצא מקום ספציפי</H1><BR/><p>נסה יוטיו: <a href=\"https://www.youtube.com\">Youtube</a></p></body>";
 		}
 	}
 }
@@ -34,4 +34,3 @@ function cleanup_by_filter() {
 setInterval(function(){
 	cleanup_by_filter();
 }, 1000);
-

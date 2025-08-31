@@ -26,6 +26,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("watch-content full-bleed-wn-thumbs", "");
 	filter_by_class_and_id("carousel-item", "");
 	filter_by_class_and_id("feed-item", "");
+	filter_by_class_and_id("BidNOe fp-c", "");
 }
 
 function cleanup_ads() {

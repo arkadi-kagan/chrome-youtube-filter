@@ -66,6 +66,21 @@ function filter_class_id_and_inner_calls_tag(trigger_class, trigger_id, inner_cl
 	}
 }
 
+function filter_tag_and_other_class_id(trigger_tag, other_class, other_id) {
+	let myNodeList = document.getElementsByTagName(trigger_tag);
+	for (let i = 0; i < myNodeList.length; i++) {
+		if (myNodeList[i].textContent.search(my_regex) != -1) {
+			let others = document.getElementsByClassName(other_class);
+			for (let j = 0; j < others.length; j++) {
+				if (others[j].id === other_id) {
+					others[j].remove();
+					j--;
+				}
+			}
+		}
+	}
+}
+
 function remove_tags(tag_name) {
 	let myNodeList = document.getElementsByTagName(tag_name);
 	for (let i = 0; i < myNodeList.length; i++) {

@@ -1,7 +1,7 @@
 This project implements chrome filter by arbitrary words.
 Currently, this filter supports:
-   www.google.com
-   www.youtube.com
+*   www.google.com
+*   www.youtube.com
 
 Because, Youtube pages have human-readible class names,
 I give some more trust in my Youtube processing.
@@ -21,17 +21,17 @@ Once plugin is ready - Chrome on Windows allows filtering without farther troubl
 # Instructions for new user
 * Assume Linux or modify commands accordingly
 * Clone repository:
-*    git clone https://github.com/arkadi-kagan/chrome-youtube-filter.git
-*    cd chrome-youtube-filter/chrome-filter/scripts
+  * git clone https://github.com/arkadi-kagan/chrome-youtube-filter.git
+  * cd chrome-youtube-filter/chrome-filter/scripts
 * Create new words filter:
-*    cp Yuval.js MyList.js
-*    gedit MyList.js
-*    cd ../..
+  * cp Yuval.js MyList.js
+  * gedit MyList.js
+  * cd ../..
 * Do remove all or some words and add new words instead
 * Generate the new plugin
-*    ./configyre MyList
+  * ./configyre MyList
 * Generate the plugin
-*    make
+  * make
 * The new plugin is chrome-filter.crx
 * In case you want to check it locally,
-*    install plugin as chrome-youtube-filter/chrome-filter directory
+  * install plugin as chrome-youtube-filter/chrome-filter directory

@@ -6,6 +6,8 @@ function cleanup_by_filter() {
 	filter_class_id_and_inner_calls_tag("ytd-watch-flexy", "primary-inner", "watch-active-metadata ytd-watch-flexy", "ytd-watch-metadata");
 	filter_tag_and_other_class_id("ytm-slim-video-metadata-section-renderer", "player-container", "player-container-id");
 	filter_by_class_and_id("ytd-channel-renderer", "content-section");
+	filter_by_class_and_id("ytp-videowall-still", "");
+	filter_by_class_and_id("fullscreen-recommendation", "");
 	filter_by_class_and_id("ytd-vertical-list-renderer", "");
 	filter_by_class_and_id("ytd-video-renderer", "dismissible");
 	filter_by_class_and_id("ytd-rich-grid-media", "dismissible");

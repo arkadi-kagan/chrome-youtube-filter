@@ -77,7 +77,10 @@
         "https://mover.uz/*",
         "https://open.spotify.com/*",
         "https://eminem.pro/*",
-        "https://www.reddit.com/*"
+        "https://www.reddit.com/*",
+        "https://www.tiktok.com/*",
+        "https://tiktok.com/*",
+        "https://m.tiktok.com/*"
       ]
     }
   ]

@@ -3,6 +3,8 @@ function cleanup_by_filter() {
 	filter_class_id_and_other_class_id("ytd-watch-metadata", "top-row", "ytd-watch-flexy", "full-bleed-container");
 	filter_class_id_and_other_class_id("ytp-title-text", "", "ytd-watch-flexy", "full-bleed-container");
 	filter_class_id_and_other_class_id("playerMicroformatRendererHost", "", "ytd-watch-flexy", "player-full-bleed-container")
+	filter_class_id_and_other_class_id("playerMicroformatRendererHost", "", "ytd-page-manager watch-root-element", "");
+	filter_class_id_remove_all("watch-main-col", "watch7-content");
 	filter_class_id_and_inner_calls_tag("ytd-watch-flexy", "primary-inner", "watch-active-metadata ytd-watch-flexy", "ytd-watch-metadata");
 	filter_tag_and_other_class_id("ytm-slim-video-metadata-section-renderer", "player-container", "player-container-id");
 	filter_by_class_and_id("ytd-channel-renderer", "content-section");

@@ -15,6 +15,7 @@ function filter_last_resort() {
 }
 
 function cleanup_by_filter() {
+	filter_by_class_and_id("XRVJtc bnmjfe aKByQb", "");
 	filter_by_class_and_id("TzHB6b j8lBAb p7kDMc cLjAic", "");
 	filter_by_class_and_id("g PmEWq", "");
 	filter_by_class_and_id_multiple_only("MjjYud", "");
@@ -28,6 +29,9 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("sbct", "");
 	filter_by_class_and_id("CYJS5e W0urI ZHugbd UivI7b", "");
 	filter_by_class_and_id("TQc1id k5T88b vVVcqf", "rhs");
+	filter_by_class_and_id("b2Rnsc vIifob", "");
+	filter_by_class_and_id("T19leb", "");
+	filter_by_tag("script");
 	filter_last_resort();
 }
 

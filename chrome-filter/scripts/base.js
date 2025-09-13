@@ -35,7 +35,7 @@ function filter_class_id_and_other_class_id(trigger_class, trigger_id, other_cla
 	let myNodeList = document.getElementsByClassName(trigger_class);
 	for (let i = 0; i < myNodeList.length; i++) {
 		if (myNodeList[i].id === trigger_id) {
-			if (myNodeList[i].textContent.search(my_regex) != -1) {
+			if (myNodeList[i].outerHTML.search(my_regex) != -1) {
 				let others = document.getElementsByClassName(other_class);
 				for (let j = 0; j < others.length; j++) {
 					if (others[j].id === other_id) {
@@ -81,6 +81,16 @@ function filter_tag_and_other_class_id(trigger_tag, other_class, other_id) {
 	}
 }
 
+function filter_by_tag(tag_name) {
+	let myNodeList = document.getElementsByTagName(tag_name);
+	for (let i = 0; i < myNodeList.length; i++) {
+		if (myNodeList[i].textContent.search(my_regex) != -1) {
+			myNodeList[i].remove();
+			i--;
+		}
+	}
+}
+
 function remove_tags(tag_name) {
 	let myNodeList = document.getElementsByTagName(tag_name);
 	for (let i = 0; i < myNodeList.length; i++) {
@@ -95,6 +105,26 @@ function remove_no_filter(class_name, id) {
 		if (id == myNodeList[i].id) {
 			myNodeList[i].remove();
 			i--;
+		}
+	}
+}
+
+function filter_class_id_remove_all(trigger_class, trigger_id) {
+	let myNodeList = document.getElementsByClassName(trigger_class);
+	for (let i = 0; i < myNodeList.length; i++) {
+		if (myNodeList[i].id === trigger_id) {
+			if (myNodeList[i].outerHTML.search(my_regex) != -1) {
+				remove_tags("script");
+				remove_tags("body");
+				remove_tags("head");
+				let htmlList = document.getElementsByTagName("html");
+				let head = document.createElement("head")
+				head.innerHTML = "<title>אתר לא מורשה</title>";
+				htmlList[0].appendChild(head);
+				let body = document.createElement("body");
+				body.innerHTML = "<H1>אתר לא מורשה</H1><BR/><p>נסה יוטיוב: <a href=\"https://www.youtube.com\">Youtube</a></p>";
+				htmlList[0].appendChild(body);
+			}
 		}
 	}
 }

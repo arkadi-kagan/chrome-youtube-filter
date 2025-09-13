@@ -19,7 +19,8 @@
       ],
       "matches": [
         "https://www.youtube.com/*",
-        "https://m.youtube.com/*"
+        "https://m.youtube.com/*",
+        "https://youtu.be/*"
       ]
     },
     {
@@ -69,7 +70,14 @@
         "https://yandex.com/*",
         "https://www.dzen.com/*",
         "https://m.dzen.com/*",
-        "https://dzen.com/*"
+        "https://dzen.com/*",
+        "https://www.x.com/*",
+        "https://m.x.com/*",
+        "https://x.com/*",
+        "https://mover.uz/*",
+        "https://open.spotify.com/*",
+        "https://eminem.pro/*",
+        "https://www.reddit.com/*"
       ]
     }
   ]

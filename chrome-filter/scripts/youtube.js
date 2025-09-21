@@ -34,6 +34,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("carousel-item", "");
 	filter_by_class_and_id("feed-item", "");
 	filter_by_class_and_id("BidNOe fp-c", "");
+	filter_tag_and_ban("head");
 }
 
 function cleanup_ads() {

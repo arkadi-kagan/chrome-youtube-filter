@@ -1,5 +1,26 @@
 const my_regex = new RegExp(regex_array.join("|"), "i");
 
+function remove_tags(tag_name) {
+	let myNodeList = document.getElementsByTagName(tag_name);
+	for (let i = 0; i < myNodeList.length; i++) {
+		myNodeList[i].remove();
+		i--;
+	}
+}
+
+function ban_whole_page() {
+	remove_tags("script");
+	remove_tags("body");
+	remove_tags("head");
+	let htmlList = document.getElementsByTagName("html");
+	let head = document.createElement("head")
+	head.innerHTML = "<title>אתר לא מורשה</title>";
+	htmlList[0].appendChild(head);
+	let body = document.createElement("body");
+	body.innerHTML = "<H1>אתר לא מורשה</H1><BR/><p>נסה יוטיוב: <a href=\"https://www.youtube.com\">Youtube</a></p>";
+	htmlList[0].appendChild(body);
+}
+
 function filter_by_class_and_id(class_name, id) {
 	let myNodeList = document.getElementsByClassName(class_name);
 	for (let i = 0; i < myNodeList.length; i++) {
@@ -91,11 +112,13 @@ function filter_by_tag(tag_name) {
 	}
 }
 
-function remove_tags(tag_name) {
+function filter_tag_and_ban(tag_name) {
 	let myNodeList = document.getElementsByTagName(tag_name);
 	for (let i = 0; i < myNodeList.length; i++) {
-		myNodeList[i].remove();
-		i--;
+		if (myNodeList[i].textContent.search(my_regex) != -1) {
+			ban_whole_page();
+			break;
+		}
 	}
 }
 
@@ -114,16 +137,8 @@ function filter_class_id_remove_all(trigger_class, trigger_id) {
 	for (let i = 0; i < myNodeList.length; i++) {
 		if (myNodeList[i].id === trigger_id) {
 			if (myNodeList[i].outerHTML.search(my_regex) != -1) {
-				remove_tags("script");
-				remove_tags("body");
-				remove_tags("head");
-				let htmlList = document.getElementsByTagName("html");
-				let head = document.createElement("head")
-				head.innerHTML = "<title>אתר לא מורשה</title>";
-				htmlList[0].appendChild(head);
-				let body = document.createElement("body");
-				body.innerHTML = "<H1>אתר לא מורשה</H1><BR/><p>נסה יוטיוב: <a href=\"https://www.youtube.com\">Youtube</a></p>";
-				htmlList[0].appendChild(body);
+				ban_whole_page();
+				break;
 			}
 		}
 	}

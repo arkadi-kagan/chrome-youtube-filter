@@ -35,6 +35,8 @@
     },
     {
       "js": [
+        "scripts/words.js",
+        "scripts/base.js",
         "scripts/not_allowed.js"
       ],
       "matches": [

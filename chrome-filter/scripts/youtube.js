@@ -1,4 +1,3 @@
-
 function cleanup_by_filter() {
 	filter_class_id_and_other_class_id("ytd-watch-metadata", "top-row", "ytd-watch-flexy", "full-bleed-container");
 	filter_class_id_and_other_class_id("ytp-title-text", "", "ytd-watch-flexy", "full-bleed-container");
@@ -34,6 +33,7 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("carousel-item", "");
 	filter_by_class_and_id("feed-item", "");
 	filter_by_class_and_id("BidNOe fp-c", "");
+	filter_by_tag("script");
 	filter_tag_and_ban("head");
 }
 

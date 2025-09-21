@@ -25,7 +25,7 @@ function filter_by_class_and_id(class_name, id) {
 	let myNodeList = document.getElementsByClassName(class_name);
 	for (let i = 0; i < myNodeList.length; i++) {
 		if (id === myNodeList[i].id) {
-			if (myNodeList[i].textContent.search(my_regex) != -1) {
+			if (myNodeList[i].outerHTML.search(my_regex) != -1) {
 				myNodeList[i].remove();
 				i--;
 			}
@@ -140,6 +140,17 @@ function filter_class_id_remove_all(trigger_class, trigger_id) {
 				ban_whole_page();
 				break;
 			}
+		}
+	}
+}
+
+function filter_tag_by_specific_content(tag_name, content) {
+	const content_regex = new RegExp(content, "i");
+	let myNodeList = document.getElementsByTagName(tag_name);
+	for (let i = 0; i < myNodeList.length; i++) {
+		if (myNodeList[i].textContent.search(content_regex) != -1) {
+			myNodeList[i].remove();
+			i--;
 		}
 	}
 }

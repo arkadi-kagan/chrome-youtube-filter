@@ -31,6 +31,8 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("TQc1id k5T88b vVVcqf", "rhs");
 	filter_by_class_and_id("b2Rnsc vIifob", "");
 	filter_by_class_and_id("T19leb", "");
+	filter_by_class_and_id("j8c53", "");
+	filter_by_class_and_id("T286Pc", "");
 	filter_by_tag("script");
 	filter_last_resort();
 }

@@ -83,7 +83,10 @@
         "https://www.tiktok.com/*",
         "https://tiktok.com/*",
         "https://m.tiktok.com/*",
-        "https://blog.youtube/*"
+        "https://blog.youtube/*",
+        "https://www.tlgrm.ru/*",
+        "https://m.tlgrm.ru/*",
+        "https://tlgrm.ru/*"
       ]
     }
   ]

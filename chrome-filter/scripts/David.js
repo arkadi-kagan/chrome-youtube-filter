@@ -42,5 +42,6 @@ const regex_array = [
 	"Тим Тин", "MrBeast", "Макс силач", "Explicit", "Eminem",
 	"Broke Into", "взлом", "Ben Azelart", "Dubbed", "Divan_Experty",
 	"Noam Firuz", "Артемий Абрамов", "Вадим Бабешкин", "TheBrianMaps",
-	"Дюшес", "Prank", "Dalbek", "Mamix", "Я РУССКИЙ"
+	"Дюшес", "Prank", "Dalbek", "Mamix", "Я РУССКИЙ",
+	"Double bouble"
 ];

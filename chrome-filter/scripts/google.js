@@ -9,7 +9,8 @@ function filter_last_resort() {
 	let bodies = document.getElementsByTagName("body");
 	for (let i = 0; i < bodies.length; i++) {
 		if (bodies[i].textContent.search(my_regex) != -1) {
-			bodies[i].outerHTML = "<body><H1>תוכן אסור בעמוד, לא נמצא מקום ספציפי</H1><BR/><p>נסה יוטיו: <a href=\"https://www.youtube.com\">Youtube</a></p></body>";
+			ban_whole_page();
+			break;
 		}
 	}
 }
@@ -30,10 +31,12 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("CYJS5e W0urI ZHugbd UivI7b", "");
 	filter_by_class_and_id("TQc1id k5T88b vVVcqf", "rhs");
 	filter_by_class_and_id("b2Rnsc vIifob", "");
+	filter_by_class_and_id("GGYY2b cTMoX", "");
 	filter_by_class_and_id("T19leb", "");
 	filter_by_class_and_id("j8c53", "");
 	filter_by_class_and_id("T286Pc", "");
 	filter_by_tag("script");
+	filter_by_tag("dev");
 	filter_last_resort();
 }
 

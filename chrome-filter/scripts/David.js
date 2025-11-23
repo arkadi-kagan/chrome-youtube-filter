@@ -43,5 +43,7 @@ const regex_array = [
 	"Broke Into", "взлом", "Ben Azelart", "Dubbed", "Divan_Experty",
 	"Noam Firuz", "Артемий Абрамов", "Вадим Бабешкин", "TheBrianMaps",
 	"Дюшес", "Prank", "Dalbek", "Mamix", "Я РУССКИЙ",
-	"Double bouble"
+	"Double Bubble", "Stokes Twins", "מנטור", "אליעד כהן",
+	"Udi Kagan", "Nick DiGiovanni", "жизнь виа", "РАМУЗЫК",
+	"тайная комната", "тайные комнаты", "шалава"
 ];

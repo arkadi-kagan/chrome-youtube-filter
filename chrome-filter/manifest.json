@@ -20,8 +20,7 @@
       "matches": [
         "https://www.youtube.com/*",
         "https://m.youtube.com/*",
-        "https://youtu.be/*",
-        "https://music.youtube.com/*"
+        "https://youtu.be/*"
       ]
     },
     {
@@ -87,7 +86,8 @@
         "https://blog.youtube/*",
         "https://www.tlgrm.ru/*",
         "https://m.tlgrm.ru/*",
-        "https://tlgrm.ru/*"
+        "https://tlgrm.ru/*",
+        "https://music.youtube.com/*"
       ]
     }
   ]

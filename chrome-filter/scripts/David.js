@@ -46,5 +46,6 @@ const regex_array = [
 	"Double Bubble", "Stokes Twins", "מנטור", "אליעד כהן",
 	"Udi Kagan", "Nick DiGiovanni", "жизнь виа", "РАМУЗЫК",
 	"тайная комната", "тайные комнаты", "шалава",
-	"МультоРетик", "Джестер", "BrainDamage", "BenKeysar", "Лесоповал", "Аришнев"
+	"МультоРетик", "Джестер", "BrainDamage", "BenKeysar", "Лесоповал", "Аришнев",
+	"Lesha Malsak", "for 24 hours"
 ];

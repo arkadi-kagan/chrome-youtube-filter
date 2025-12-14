@@ -47,5 +47,6 @@ const regex_array = [
 	"Udi Kagan", "Nick DiGiovanni", "жизнь виа", "РАМУЗЫК",
 	"тайная комната", "тайные комнаты", "шалава",
 	"МультоРетик", "Джестер", "BrainDamage", "BenKeysar", "Лесоповал", "Аришнев",
-	"Lesha Malsak", "for 24 hours"
+	"Lesha Maisak", "for 24 hours",
+	"מני ממטרה", "поззи", "A4a4a4a4", "майсак", "סטנדאפ", "סטנדאף", "Dezistar27"
 ];

@@ -29,7 +29,7 @@ Once plugin is ready - Chrome on Windows allows filtering without farther troubl
   * cd ../..
 * Do remove all or some words and add new words instead
 * Generate the new plugin
-  * ./configyre MyList
+  * ./configure MyList
 * Generate the plugin
   * make
 * The new plugin is chrome-filter.crx

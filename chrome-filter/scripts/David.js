@@ -48,5 +48,6 @@ const regex_array = [
 	"тайная комната", "тайные комнаты", "шалава",
 	"МультоРетик", "Джестер", "BrainDamage", "BenKeysar", "Лесоповал", "Аришнев",
 	"Lesha Maisak", "for 24 hours",
-	"מני ממטרה", "поззи", "A4a4a4a4", "майсак", "סטנדאפ", "סטנדאף", "Dezistar27", "OneTwo", "leomax", "evgpro", "evgroup"
+	"מני ממטרה", "поззи", "A4a4a4a4", "майсак", "סטנדאפ", "סטנדאף", "Dezistar27", "OneTwo",
+	"leomax", "evgpro", "evgroup", ">EVG<"
 ];

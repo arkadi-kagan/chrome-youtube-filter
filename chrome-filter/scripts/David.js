@@ -49,5 +49,5 @@ const regex_array = [
 	"МультоРетик", "Джестер", "BrainDamage", "BenKeysar", "Лесоповал", "Аришнев",
 	"Lesha Maisak", "for 24 hours",
 	"מני ממטרה", "поззи", "A4a4a4a4", "майсак", "סטנדאפ", "סטנדאף", "Dezistar27", "OneTwo",
-	"leomax", "evgpro", "evgroup", ">EVG<"
+	"leomax", "evgpro", "evgroup", ">EVG<", "бутырка", "butyrka", "butirka"
 ];

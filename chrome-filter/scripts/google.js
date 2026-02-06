@@ -8,7 +8,7 @@ function filter_by_class_and_id_multiple_only(class_name, id) {
 function filter_last_resort() {
 	let bodies = document.getElementsByTagName("body");
 	for (let i = 0; i < bodies.length; i++) {
-		if (bodies[i].textContent.search(my_regex) != -1) {
+		if (bodies[i].outerHTML.search(my_regex) != -1) {
 			ban_whole_page();
 			break;
 		}

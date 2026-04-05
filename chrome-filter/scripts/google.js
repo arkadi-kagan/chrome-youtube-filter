@@ -1,21 +1,4 @@
-function filter_by_class_and_id_multiple_only(class_name, id) {
-	let myNodeList = document.getElementsByClassName(class_name);
-	if (myNodeList.length > 1) {
-		filter_by_class_and_id(class_name, id);
-	}
-}
-
-function filter_last_resort() {
-	let bodies = document.getElementsByTagName("body");
-	for (let i = 0; i < bodies.length; i++) {
-		if (bodies[i].outerHTML.search(my_regex) != -1) {
-			ban_whole_page();
-			break;
-		}
-	}
-}
-
-function cleanup_by_filter() {
+function cleanup_google() {
 	filter_by_class_and_id("XRVJtc bnmjfe aKByQb", "");
 	filter_by_class_and_id("TzHB6b j8lBAb p7kDMc cLjAic", "");
 	filter_by_class_and_id("g PmEWq", "");
@@ -35,11 +18,8 @@ function cleanup_by_filter() {
 	filter_by_class_and_id("T19leb", "");
 	filter_by_class_and_id("j8c53", "");
 	filter_by_class_and_id("T286Pc", "");
+	filter_by_class_and_id("related-question-pair", "");
 	filter_by_tag("script");
 	filter_by_tag("dev");
 	filter_last_resort();
 }
-
-setInterval(function(){
-	cleanup_by_filter();
-}, 1000);

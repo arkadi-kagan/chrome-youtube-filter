@@ -154,3 +154,20 @@ function filter_tag_by_specific_content(tag_name, content) {
 		}
 	}
 }
+
+function filter_by_class_and_id_multiple_only(class_name, id) {
+	let myNodeList = document.getElementsByClassName(class_name);
+	if (myNodeList.length > 1) {
+		filter_by_class_and_id(class_name, id);
+	}
+}
+
+function filter_last_resort() {
+	let bodies = document.getElementsByTagName("body");
+	for (let i = 0; i < bodies.length; i++) {
+		if (bodies[i].outerHTML.search(my_regex) != -1) {
+			ban_whole_page();
+			break;
+		}
+	}
+}

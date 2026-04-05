@@ -1,4 +1,4 @@
-function cleanup_by_filter() {
+function cleanup_by_filter_youtube() {
 	filter_class_id_and_other_class_id("ytd-watch-metadata", "top-row", "ytd-watch-flexy", "full-bleed-container");
 	filter_class_id_and_other_class_id("ytp-title-text", "", "ytd-watch-flexy", "full-bleed-container");
 	filter_class_id_and_other_class_id("playerMicroformatRendererHost", "", "ytd-watch-flexy", "player-full-bleed-container")
@@ -38,14 +38,13 @@ function cleanup_by_filter() {
 	filter_tag_and_ban("head");
 }
 
-function cleanup_ads() {
+function cleanup_ads_youtube() {
 	remove_no_filter("ytd-watch-flexy", "player-ads");
 	remove_tags("ad-slot-renderer");
 	remove_tags("ytd-in-feed-ad-layout-renderer");
 }
 
-setInterval(function(){
-	cleanup_ads();
-	cleanup_by_filter();
-}, 1000);
-
+function cleanup_youtube() {
+	cleanup_ads_youtube();
+	cleanup_by_filter_youtube();
+}

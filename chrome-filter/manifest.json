@@ -15,91 +15,12 @@
       "js": [
         "scripts/words.js",
         "scripts/base.js",
-      	"scripts/youtube.js"
+      	"scripts/youtube.js",
+      	"scripts/google.js",
+        "scripts/switch.js"
       ],
       "matches": [
-        "https://www.youtube.com/*",
-        "https://m.youtube.com/*",
-        "https://youtu.be/*"
-      ]
-    },
-    {
-      "js": [
-        "scripts/words.js",
-        "scripts/base.js",
-      	"scripts/google.js"
-      ],
-      "matches": [
-        "https://www.google.com/*"
-      ]
-    },
-    {
-      "js": [
-        "scripts/words.js",
-        "scripts/base.js",
-        "scripts/not_allowed.js"
-      ],
-      "matches": [
-        "https://www.vk.com/*",
-        "https://m.vk.com/*",
-        "https://vk.com/*",
-        "https://www.vk.ru/*",
-        "https://m.vk.ru/*",
-        "https://vk.ru/*",
-        "https://www.ok.ru/*",
-        "https://m.ok.ru/*",
-        "https://ok.ru/*",
-        "https://www.pornhub.com/*",
-        "https://m.pornhub.com/*",
-        "https://pornhub.com/*",
-        "https://www.xvideos.com/*",
-        "https://m.xvideos.com/*",
-        "https://xvideos.com/*",
-        "https://www.xnxx.com/*",
-        "https://m.xnxx.com/*",
-        "https://xnxx.com/*",
-        "https://www.rutube.ru/*",
-        "https://m.rutube.ru/*",
-        "https://rutube.ru/*",
-        "https://www.yandex.kz/*",
-        "https://m.yandex.kz/*",
-        "https://yandex.kz/*",
-        "https://www.yandex.ru/*",
-        "https://m.yandex.ru/*",
-        "https://yandex.ru/*",
-        "https://www.yandex.com.tr/*",
-        "https://m.yandex.com.tr/*",
-        "https://yandex.com.tr/*",
-        "https://www.yandex.by/*",
-        "https://m.yandex.by/*",
-        "https://yandex.by/*",
-        "https://www.dzen.kz/*",
-        "https://m.dzen.kz/*",
-        "https://dzen.kz/*",
-        "https://www.dzen.ru/*",
-        "https://m.dzen.ru/*",
-        "https://dzen.ru/*",
-        "https://www.yandex.com/*",
-        "https://m.yandex.com/*",
-        "https://yandex.com/*",
-        "https://www.dzen.com/*",
-        "https://m.dzen.com/*",
-        "https://dzen.com/*",
-        "https://www.x.com/*",
-        "https://m.x.com/*",
-        "https://x.com/*",
-        "https://mover.uz/*",
-        "https://open.spotify.com/*",
-        "https://eminem.pro/*",
-        "https://www.reddit.com/*",
-        "https://www.tiktok.com/*",
-        "https://tiktok.com/*",
-        "https://m.tiktok.com/*",
-        "https://blog.youtube/*",
-        "https://www.tlgrm.ru/*",
-        "https://m.tlgrm.ru/*",
-        "https://tlgrm.ru/*",
-        "https://music.youtube.com/*"
+        "*://*/*"
       ]
     }
   ]

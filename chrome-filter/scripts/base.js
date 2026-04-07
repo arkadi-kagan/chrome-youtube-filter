@@ -104,10 +104,10 @@ function filter_tag_and_other_class_id(trigger_tag, other_class, other_id) {
 
 function filter_by_tag(tag_name) {
 	let myNodeList = document.getElementsByTagName(tag_name);
-	for (let i = 0; i < myNodeList.length; i++) {
+	for (let i = myNodeList.length - 1; i >= 0; i--) {
 		if (myNodeList[i].outerHTML.search(my_regex) != -1) {
 			myNodeList[i].remove();
-			i--;
+			i++;
 		}
 	}
 }

@@ -5,7 +5,9 @@ function cleanup_by_filter() {
     } else if (hostname.match(/^[a-z]+\.youtube\.[a-z0-9\.]+/i)) {
         cleanup_youtube();
     } else if (hostname.match(/^[a-z]+\.google\.[a-z0-9\.]+/i)) {
-        cleanup_google();
+        if (!hostname.match(/accounts\.google\.com/)) {
+            cleanup_google();
+        }
     } else {
         filter_by_tag("script");
         filter_by_tag("dev");

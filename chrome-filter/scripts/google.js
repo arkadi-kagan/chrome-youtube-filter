@@ -19,7 +19,13 @@ function cleanup_google() {
 	filter_by_class_and_id("j8c53", "");
 	filter_by_class_and_id("T286Pc", "");
 	filter_by_class_and_id("related-question-pair", "");
+	filter_by_class_and_id("LH3wG", "");
+	filter_by_class_and_id("Txngnb", "");
+	filter_by_class_and_id("rIxsve", "");
+	filter_by_tag("header");
+	filter_by_tag("noscript");
+	filter_by_tag("textarea");
 	filter_by_tag("script");
-	filter_by_tag("dev");
+	filter_by_tag("div");
 	filter_last_resort();
 }

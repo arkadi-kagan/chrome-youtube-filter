@@ -35,7 +35,7 @@ function cleanup_by_filter_youtube() {
 	filter_by_class_and_id("BidNOe fp-c", "");
 	filter_by_tag("ytm-compact-video-renderer");
 	filter_by_tag("script");
-	filter_tag_and_ban("head");
+	filter_by_tag("head");
 }
 
 function cleanup_ads_youtube() {

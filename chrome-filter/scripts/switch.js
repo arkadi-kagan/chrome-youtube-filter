@@ -8,7 +8,11 @@ function cleanup_by_filter() {
         if (!hostname.match(/accounts\.google\.com/)) {
             cleanup_google();
         }
+    } else if (hostname.match(/^[a-z]+\.wikipedia\.[a-z0-9\.]+/i)) {
+        // Allow everything
     } else {
+        if (document.outerHTML.search(my_regex) != -1)
+            return;
         filter_by_tag("script");
         filter_by_tag("dev");
         filter_last_resort();

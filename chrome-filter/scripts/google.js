@@ -1,5 +1,5 @@
 function cleanup_google() {
-	if (document.getElementsByTagName("html")[0].outerHTML.search(my_regex) != -1)
+	if (document.getElementsByTagName("html")[0].outerHTML.search(my_regex) == -1)
 		return;
 	filter_by_class_and_id("XRVJtc bnmjfe aKByQb", "");
 	filter_by_class_and_id("TzHB6b j8lBAb p7kDMc cLjAic", "");
@@ -24,13 +24,13 @@ function cleanup_google() {
 	filter_by_class_and_id("LH3wG", "");
 	filter_by_class_and_id("Txngnb", "");
 	filter_by_class_and_id("rIxsve", "");
-	if (document.getElementsByTagName("html")[0].outerHTML.search(my_regex) != -1)
+	if (document.getElementsByTagName("html")[0].outerHTML.search(my_regex) == -1)
 		return;
 	filter_by_tag("header");
 	filter_by_tag("noscript");
 	filter_by_tag("textarea");
 	filter_by_tag("script");
-	if (document.getElementsByTagName("html")[0].outerHTML.search(my_regex) != -1)
+	if (document.getElementsByTagName("html")[0].outerHTML.search(my_regex) == -1)
 		return;
 	filter_by_tag("div");
 	filter_last_resort();

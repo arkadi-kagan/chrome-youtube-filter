@@ -40,7 +40,7 @@ const regex_array = [
 	"\@top-top", "кируля аскалонская", "Keren_Pevzner",
 	"гоп стоп", "гоп-стоп", "гоп - стоп",
 	"Тим Тин", "MrBeast", "Макс силач", "Explicit", "Eminem",
-	"Broke Into", "взлом", "Ben Azelart", "Dubbed", "Divan_Experty",
+	"Broke Into", "взлом", "Ben Azelart", "Divan_Experty",
 	"Noam Firuz", "Артемий Абрамов", "Вадим Бабешкин", "TheBrianMaps",
 	"Дюшес", "Prank", "Dalbek", "Mamix", "Я РУССКИЙ",
 	"Double Bubble", "Stokes Twins", "מנטור", "אליעד כהן",

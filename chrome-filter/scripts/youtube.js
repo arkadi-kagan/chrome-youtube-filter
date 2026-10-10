@@ -37,7 +37,7 @@ function cleanup_by_filter_youtube() {
 	if (document.getElementsByTagName("html")[0].outerHTML.search(my_regex) == -1)
 		return;
 	filter_by_tag("ytm-compact-video-renderer");
-	filter_by_tag("script");
+	// filter_by_tag("script");
 }
 
 function cleanup_ads_youtube() {

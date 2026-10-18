@@ -50,5 +50,6 @@ const regex_array = [
 	"Lesha Maisak", "for 24 hours",
 	"מני ממטרה", "поззи", "A4a4a4a4", "майсак", "סטנדאפ", "סטנדאף", "Dezistar27", "OneTwo",
 	"leomax", "evgpro", "evgroup", ">EVG<", "бутырка", "butyrka", "butirka",
-	"Папа Роб", "Papa Rob", "marasm", "marazm"
+	"Папа Роб", "Papa Rob", "marasm", "marazm",
+	"[0-9]+ дней на одних ", " день на одних ", "[0-9]+ лет на одних ", " год на одних "
 ];

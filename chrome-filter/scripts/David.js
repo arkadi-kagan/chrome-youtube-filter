@@ -53,5 +53,6 @@ const regex_array = [
 	"Папа Роб", "Papa Rob", "marasm", "marazm",
 	"[0-9]+ дней на одних ", " день на одних ", "[0-9]+ лет на одних ", " год на одних ",
 	"стриптиз", "стрипбар", "стрип-бар", "strip club", "strip bar", "strip-club", "strip-bar",
-	"таня кусь", "ШО ТУТ ПРОИСХОДИТ", "funt_odessa", "funt_blog", "ДУШНИЛА"
+	"таня кусь", "ШО ТУТ ПРОИСХОДИТ", "funt_odessa", "funt_blog", "ДУШНИЛА",
+	"superstas", "Супер Стас"
 ];

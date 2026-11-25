@@ -1,8 +1,12 @@
+function is_youtube_hostname(hostname) {
+    return /^[a-z]+\.youtube\.[a-z0-9\.]+/i.test(hostname);
+}
+
 function cleanup_by_filter() {
-    hostname = window.location.hostname;
+    const hostname = window.location.hostname;
     if (hostname.match(/^[a-z0-9]+\.(vk|ok|pornhub|xvideos|xnxx|rutube|x|mover|eminem|reddit|tiktok|tlgrm|kinogo)\.[a-z0-9]+/i)) {
         ban_whole_page();
-    } else if (hostname.match(/^[a-z]+\.youtube\.[a-z0-9\.]+/i)) {
+    } else if (is_youtube_hostname(hostname)) {
         cleanup_youtube();
     } else if (hostname.match(/^[a-z]+\.google\.[a-z0-9\.]+/i)) {
         if (!hostname.match(/accounts\.google\.com/)) {
@@ -20,5 +24,5 @@ function cleanup_by_filter() {
 }
 
 setInterval(function(){
-	cleanup_by_filter();
+    cleanup_by_filter();
 }, 1000);
